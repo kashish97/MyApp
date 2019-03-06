@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineSpotShadowColor="@color/blgr"
+        android:padding="5dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="470dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="216dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/blgr"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="69dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/icoo" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="101dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingTop="10dp"
+                        android:text="TextView"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/listLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="0dp"
+                    android:divider="@color/grey"
+                    android:dividerHeight="1sp"
+                    android:orientation="vertical"
+                    android:paddingTop="5sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

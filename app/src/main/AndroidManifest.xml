@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.codecorp.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".TestActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".SampleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SubscribedTestActivity"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity
+            android:name=".TestDetailActivity"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity
+            android:name=".GetTestActivity"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity
+            android:name=".QuestionsActivity"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity
+            android:name=".AnswerSheetActivity"
+            android:theme="@style/AppTheme"
+
+            />
+        <activity android:name=".OrderDetailActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name=".PaidCourseActivity"
+            android:theme="@style/AppTheme"
+            />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".PackageActivity"
+            android:theme="@style/AppTheme"
+            ></activity>
+    </application>
+
+</manifest>

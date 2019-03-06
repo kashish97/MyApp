@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Packages</item>
+        <item>My Orders</item>
+        <item>My Profile</item>
+        <item></item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@mipmap/hm</item>
+        <item>@mipmap/cat</item>
+        <item>@mipmap/prf</item>
+        <item>@mipmap/ord</item>
+        <item/>
+        <item>@mipmap/logg</item>
+    </array>
+
+</resources>

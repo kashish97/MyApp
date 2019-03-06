@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdtp_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutButton"
+        android:paddingTop="3sp"
+
+        android:layout_marginBottom="50dp"
+        android:background="@color/mdtp_white">
+
+        <WebView
+            android:id="@+id/webQA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+
+        <include layout="@layout/view_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mdtp_line_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/btnNext"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="2.5dp"
+                android:background="@color/dblue"
+                android:fontFamily="@font/average_sans"
+                android:padding="7dp"
+                android:text="Next"
+                android:textColor="@color/mdtp_white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/btnReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@color/blue"
+                android:padding="7dp"
+                android:fontFamily="@font/average_sans"
+                android:text="Review"
+                android:textColor="@color/mdtp_white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@color/red"
+                android:fontFamily="@font/average_sans"
+                android:padding="7dp"
+                android:text="Clear"
+                android:textColor="@color/mdtp_white"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/aaa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_blue"
+                android:fontFamily="@font/average_sans"
+                android:padding="7dp"
+                android:text="Finish"
+                android:textColor="@color/blue"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/btnFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2.5dp"
+                android:background="@color/blue"
+                android:fontFamily="@font/average_sans"
+                android:padding="7dp"
+                android:text="Finish"
+                android:textColor="@color/mdtp_white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/webOther"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnCloseWeb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:text="X"
+            android:textColor="@color/mdtp_white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
